@@ -1,0 +1,1581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    background: white;
+    min-height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.clinic-name {
+    color: #64748b;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+}
+
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+nav button {
+    border: none;
+    background: #ef4444;
+    color: white;
+
+    padding: 9px 15px;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+nav button:hover {
+    background: #dc2626;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+
+.secondary-btn {
+    background: #e0ecff;
+    color: #2563eb;
+}
+
+
+.secondary-btn:hover {
+    background: #cbdcff;
+}
+
+
+.full-width {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   WELCOME PAGE
+========================= */
+
+.welcome-container {
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.welcome-card {
+    background: white;
+
+    max-width: 650px;
+
+    width: 100%;
+
+    padding: 50px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+.medical-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+.welcome-card h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+.welcome-card p {
+    color: #64748b;
+}
+
+
+.description {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+.button-container {
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    padding: 45px 7%;
+}
+
+
+.welcome-section {
+    margin-bottom: 35px;
+}
+
+
+.welcome-section h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+
+.welcome-section p {
+    color: #64748b;
+}
+
+
+.dashboard-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.dashboard-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+}
+
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.dashboard-card h2 {
+    margin-bottom: 10px;
+}
+
+
+.dashboard-card p {
+    color: #64748b;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+.clinic-status {
+    color: #16a34a;
+
+    font-weight: bold;
+}
+
+
+.clinic-info {
+    margin-top: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+
+.clinic-info h2 {
+    margin-bottom: 15px;
+}
+
+
+.clinic-info p {
+    margin: 8px 0;
+
+    color: #64748b;
+}
+
+
+/* =========================
+   APPOINTMENT FORM
+========================= */
+
+.form-container {
+    padding: 45px 20px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.form-card {
+    background: white;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.07);
+}
+
+
+.form-card h1 {
+    margin-bottom: 10px;
+}
+
+
+.form-card > p {
+    color: #64748b;
+
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+}
+
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px rgba(37,99,235,0.1);
+}
+
+
+/* =========================
+   APPOINTMENTS
+========================= */
+
+.appointments-container {
+    padding: 45px 7%;
+}
+
+
+.appointments-container > p {
+    color: #64748b;
+
+    margin-top: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+.empty-state {
+    background: white;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+}
+
+
+.empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.empty-state h2 {
+    margin-bottom: 10px;
+}
+
+
+.empty-state p {
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 15px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .welcome-card {
+        padding: 30px 20px;
+    }
+
+
+    .welcome-card h1 {
+        font-size: 30px;
+    }
+
+
+    .button-container {
+        flex-direction: column;
+    }
+
+
+    .form-card {
+        padding: 25px 20px;
+    }
+
+}
+/* =========================
+   APPOINTMENT CARDS
+========================= */
+
+.appointment-card {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.appointment-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.appointment-header h2 {
+    font-size: 20px;
+}
+
+
+.appointment-status {
+    background: #fff7ed;
+
+    color: #ea580c;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.appointment-details {
+    border-top: 1px solid #e5e7eb;
+
+    padding-top: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.appointment-details p {
+    margin: 10px 0;
+
+    color: #64748b;
+}
+
+
+.appointment-details strong {
+    color: #1f2937;
+}
+
+
+.cancel-btn {
+    background: #ef4444;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.cancel-btn:hover {
+    background: #dc2626;
+}
+
+
+@media (max-width: 600px) {
+
+    .appointment-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+/* =========================
+   LOGIN / SIGN UP
+========================= */
+
+.auth-container {
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+
+.auth-card {
+    background: white;
+
+    width: 100%;
+
+    max-width: 450px;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.auth-card .medical-icon {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+.auth-card h1 {
+    margin-bottom: 5px;
+}
+
+
+.auth-subtitle {
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+.auth-card h2 {
+    text-align: left;
+
+    margin-bottom: 8px;
+}
+
+
+.form-description {
+    color: #64748b;
+
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+
+.auth-card form {
+    text-align: left;
+}
+
+
+.switch-text {
+    margin-top: 20px;
+
+    color: #64748b;
+}
+
+
+.switch-text button {
+    border: none;
+
+    background: none;
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: inherit;
+}
+
+
+.switch-text button:hover {
+    text-decoration: underline;
+}
+
+
+.hidden {
+    display: none;
+}
+/* =========================
+   DASHBOARD STATISTICS
+========================= */
+
+.stats-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.stat-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.stat-icon {
+
+    font-size: 35px;
+
+}
+
+
+.stat-card h3 {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.stat-card strong {
+
+    font-size: 24px;
+
+    display: block;
+
+}
+
+
+/* =========================
+   NEXT APPOINTMENT
+========================= */
+
+.next-appointment {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-top: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-title a {
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+.next-card {
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+}
+
+
+.next-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.next-card-header h3 {
+
+    font-size: 18px;
+
+}
+
+
+.next-status {
+
+    background: #fff7ed;
+
+    color: #ea580c;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.next-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.next-details p {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+.next-details strong {
+
+    display: block;
+
+    color: #1f2937;
+
+    margin-top: 4px;
+
+}
+
+
+/* =========================
+   EMPTY DASHBOARD
+========================= */
+
+.empty-dashboard {
+
+    text-align: center;
+
+    padding: 30px;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 12px;
+
+}
+
+
+.empty-dashboard span {
+
+    font-size: 40px;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+}
+
+
+.empty-dashboard p {
+
+    color: #64748b;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================
+   MOBILE DASHBOARD
+========================= */
+
+@media (max-width: 800px) {
+
+    .stats-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .next-details {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .section-title {
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+}
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+#adminLogoutBtn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#adminLogoutBtn:hover {
+    opacity: 0.9;
+}
+
+
+.admin-appointment {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.admin-appointment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.admin-appointment-header h3 {
+    margin: 0;
+}
+
+
+.admin-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+
+.status-approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+
+.status-completed {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+
+.admin-details {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.admin-actions button {
+    border: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.approve-btn {
+    background: #28a745;
+    color: white;
+}
+
+
+.reject-btn {
+    background: #dc3545;
+    color: white;
+}
+
+
+.complete-btn {
+    background: #17a2b8;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-appointment-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
+/* =========================
+   APPOINTMENT STATUS COLORS
+========================= */
+
+.appointment-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.status-completed {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+.top-header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 25px;
+
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+/* LEFT LOGO */
+.header-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* CENTER TITLE */
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #123b63;
+    letter-spacing: 2px;
+}
+
+.header-title p {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* DOWNLOAD BUTTON */
+.install-btn {
+    border: none;
+    background: #2e8b57;
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.install-btn:hover {
+    background: #246b45;
+}
+/* ========================================
+   MOBILE RESPONSIVE HEADER
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .top-header {
+        height: 70px;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+
+    /* HealthDesk logo */
+
+    .header-logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* Center title */
+
+    .header-title {
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    .header-title h1 {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .header-title p {
+        font-size: 9px;
+        margin-top: 1px;
+    }
+
+
+    /* Download App button */
+
+    .install-btn {
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 7px;
+        white-space: nowrap;
+    }
+
+}
+/* ========================================
+   PWA DOWNLOAD BUTTON
+   ======================================== */
+
+.install-btn {
+
+    border: none;
+
+    background: #2e8b57;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+
+}
+
+
+.install-btn:hover {
+
+    background: #246b45;
+
+}
+
+
+/* ========================================
+   DOWNLOAD LOADING OVERLAY
+   ======================================== */
+
+.download-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(255, 255, 255, 0.97);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 99999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+}
+
+
+.download-overlay.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+.download-box {
+
+    width: 90%;
+
+    max-width: 420px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.12);
+
+}
+
+
+.download-box h2 {
+
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+
+    color: #123b63;
+
+}
+
+
+.download-box p {
+
+    color: #64748b;
+
+}
+
+
+/* ========================================
+   SPINNER
+   ======================================== */
+
+.download-spinner {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto;
+
+    border: 5px solid #e5e7eb;
+
+    border-top:
+        5px solid #2e8b57;
+
+    border-radius: 50%;
+
+    animation:
+        healthdeskSpin 1s linear infinite;
+
+}
+
+
+@keyframes healthdeskSpin {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/* ========================================
+   PROGRESS BAR
+   ======================================== */
+
+.download-progress {
+
+    width: 100%;
+
+    height: 10px;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-top: 25px;
+
+}
+
+
+.download-progress-bar {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: #2e8b57;
+
+    border-radius: 20px;
+
+    transition:
+        width 1s linear;
+
+}
+
+
+.download-countdown {
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #2e8b57 !important;
+
+}
+
+
+/* ========================================
+   MOBILE HEADER
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .top-header {
+
+        height: 68px;
+
+        padding: 8px 10px;
+
+        gap: 6px;
+
+        overflow: hidden;
+
+    }
+
+
+    .header-logo {
+
+        flex-shrink: 0;
+
+    }
+
+
+    .header-logo img {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .header-title {
+
+        position: static;
+
+        transform: none;
+
+        flex: 1;
+
+        min-width: 0;
+
+        text-align: center;
+
+    }
+
+
+    .header-title h1 {
+
+        font-size: 15px;
+
+        letter-spacing: 1px;
+
+        white-space: nowrap;
+
+    }
+
+
+    .header-title p {
+
+        font-size: 8px;
+
+        white-space: nowrap;
+
+    }
+
+
+    .install-btn {
+
+        padding: 7px 8px;
+
+        font-size: 10px;
+
+        max-width: 105px;
+
+        white-space: normal;
+
+        line-height: 1.1;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* ========================================
+   VERY SMALL PHONE
+   ======================================== */
+
+@media (max-width: 380px) {
+
+    .top-header {
+
+        padding: 7px 6px;
+
+        gap: 4px;
+
+    }
+
+
+    .header-logo img {
+
+        width: 34px;
+
+        height: 34px;
+
+    }
+
+
+    .header-title h1 {
+
+        font-size: 12px;
+
+    }
+
+
+    .header-title p {
+
+        font-size: 7px;
+
+    }
+
+
+    .install-btn {
+
+        padding: 6px 7px;
+
+        font-size: 9px;
+
+        max-width: 88px;
+
+    }
+
+
+    .download-box {
+
+        padding: 30px 20px;
+
+    }
+
+}

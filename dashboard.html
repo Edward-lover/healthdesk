@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard - HealthDesk</title>
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2e8b57"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="top-header">
+
+        <div class="header-logo">
+
+            <img
+                src="icon-192.png"
+                alt="HealthDesk Logo"
+            >
+
+        </div>
+
+
+        <div class="header-title">
+
+            <h1>HEALTHDESK</h1>
+
+            <p>School Clinic</p>
+
+        </div>
+
+    </header>
+
+
+    <nav class="page-nav">
+
+        <a
+            href="dashboard.html"
+            class="active"
+        >
+            Home
+        </a>
+
+        <a href="appointment.html">
+            My Appointment
+        </a>
+
+        <button
+            id="logoutBtn"
+            type="button"
+        >
+            Log Out
+        </button>
+
+    </nav>
+
+
+    <main class="dashboard">
+
+
+        <section class="welcome-section">
+
+            <h1>
+                Welcome 👋
+            </h1>
+
+            <p>
+                Welcome to the HealthDesk School Clinic System.
+            </p>
+
+        </section>
+
+
+        <section class="stats-container">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Total Appointments
+                </h3>
+
+                <strong id="totalAppointments">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⏳
+                </div>
+
+                <h3>
+                    Pending
+                </h3>
+
+                <strong id="pendingAppointments">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🩺
+                </div>
+
+                <h3>
+                    Student
+                </h3>
+
+                <strong id="studentNameDisplay">
+                    Student
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <section class="next-appointment">
+
+            <div class="section-title">
+
+                <h2>
+                    Next Appointment
+                </h2>
+
+                <a href="appointments.html">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div id="nextAppointment">
+
+                <div class="empty-dashboard">
+
+                    <span>
+                        📅
+                    </span>
+
+                    <p>
+                        No upcoming appointment.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="btn primary-btn"
+                    >
+                        Book an Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 HealthDesk - School Clinic
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        if ("serviceWorker" in navigator) {
+
+            navigator.serviceWorker.register(
+                "./service-worker.js"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

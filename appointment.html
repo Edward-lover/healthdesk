@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book Appointment - HealthDesk</title>
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2e8b57"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="top-header">
+
+        <div class="header-logo">
+
+            <img
+                src="icon-192.png"
+                alt="HealthDesk Logo"
+            >
+
+        </div>
+
+
+        <div class="header-title">
+
+            <h1>HEALTHDESK</h1>
+
+            <p>School Clinic</p>
+
+        </div>
+
+    </header>
+
+
+    <nav class="page-nav">
+
+        <a href="dashboard.html">
+            Home
+        </a>
+
+        <a
+            href="appointment.html"
+            class="active"
+        >
+            My Appointment
+        </a>
+
+        <button
+            id="logoutBtn"
+            type="button"
+        >
+            Log Out
+        </button>
+
+    </nav>
+
+
+    <main class="form-container">
+
+        <div class="form-card">
+
+            <h1>
+                Book an Appointment
+            </h1>
+
+            <p>
+                Fill out the form below to request a clinic appointment.
+            </p>
+
+
+            <form id="appointmentForm">
+
+
+                <label for="studentName">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    readonly
+                >
+
+
+                <label for="studentId">
+                    Student ID
+                </label>
+
+                <input
+                    type="text"
+                    id="studentId"
+                    readonly
+                >
+
+
+                <label for="appointmentDate">
+                    Date
+                </label>
+
+                <input
+                    type="date"
+                    id="appointmentDate"
+                    required
+                >
+
+
+                <label for="appointmentTime">
+                    Time
+                </label>
+
+                <input
+                    type="time"
+                    id="appointmentTime"
+                    required
+                >
+
+
+                <label for="reason">
+                    Reason
+                </label>
+
+                <select
+                    id="reason"
+                    required
+                >
+
+                    <option value="">
+                        Select a reason
+                    </option>
+
+                    <option value="General Check-up">
+                        General Check-up
+                    </option>
+
+                    <option value="Headache">
+                        Headache
+                    </option>
+
+                    <option value="Stomach Pain">
+                        Stomach Pain
+                    </option>
+
+                    <option value="Fever">
+                        Fever
+                    </option>
+
+                    <option value="Cough">
+                        Cough
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label for="notes">
+                    Additional Notes
+                </label>
+
+                <textarea
+                    id="notes"
+                    rows="4"
+                    placeholder="Optional notes..."
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn full-width"
+                >
+                    Send Appointment
+                </button>
+
+
+                <a
+                    href="dashboard.html"
+                    class="secondary-btn full-width"
+                >
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 HealthDesk - School Clinic
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        if ("serviceWorker" in navigator) {
+
+            navigator.serviceWorker.register(
+                "./service-worker.js"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
